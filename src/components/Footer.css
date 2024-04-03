@@ -1,0 +1,268 @@
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    background-color: #837d8709;
+}
+
+.footerTop {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    padding: 72px 120px 32px 120px;
+}
+
+.footerTop::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    background-image: url(/bg-pattern-footer-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    top: 0;
+    left: 0;
+}
+
+.footerLogoImg {
+    width: 10%;
+    height: 25%;
+    z-index: 1;
+}
+
+.footerSocialMedia {
+    display: flex;
+    gap: 16px;
+    z-index: 1;
+}
+
+.face i,
+.twitter i,
+.pinterest i,
+.insta i {
+    scale: 1.4;
+    color: var(--gray);
+}
+
+.face i:hover,
+.twitter i:hover,
+.pinterest i:hover,
+.insta i:hover {
+    cursor: pointer;
+    transition: .4s;
+    color: var(--violet);
+}
+
+.footerBottom {
+    position: relative;
+    padding: 48px 120px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footerBottom::after {
+    content: '';
+    position: absolute;
+    width: 85%;
+    height: 1px;
+    background-color: #837d8753;
+    top: 0;
+
+}
+
+.optionsFooter {
+    display: flex;
+    gap: 240px;
+    font-family: "Karla", sans-serif;
+}
+
+.ourCompany, .helpMe, .contact, .others {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    font-size: 14px;
+}
+
+.ourCompany p,
+.helpMe p,
+.contact p,
+.others p {
+    text-transform: uppercase;
+    color: var(--gray);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.ourCompany ul,
+.helpMe ul,
+.contact ul,
+.others ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.ourCompany ul li,
+.helpMe ul li,
+.contact ul li,
+.others ul li {
+    text-transform: uppercase;
+    color: var(--violet);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.ourCompany ul li:hover,
+.helpMe ul li:hover,
+.contact ul li:hover,
+.others ul li:hover {
+    cursor: pointer;
+    transition: .2s;
+    text-decoration: underline;
+}
+
+
+@media screen and (min-width: 901px) and (max-width: 1300px) {
+    .optionsFooter {
+        gap: 160px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .footerContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        
+    }
+
+    .footerTop {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+        padding: 96px 0 64px 0;
+        margin-bottom: 32px;
+        position: relative;
+    }
+
+    .footerTop::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(/bg-pattern-footer-mobile.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        top: 0;
+    }
+
+    .footerLogoImg {
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1;
+    }
+
+    .footerSocialMedia {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 24px;
+        z-index: 1;
+    }
+
+    .face i,
+    .twitter i,
+    .pinterest i,
+    .insta i {
+        scale: 1.4;
+        color: var(--gray);
+    }
+
+    .face i:hover,
+    .twitter i:hover,
+    .pinterest i:hover,
+    .insta i:hover {
+        cursor: pointer;
+        transition: .4s;
+        color: var(--violet);
+    }
+
+    .footerBottom {
+        position: relative;
+        text-align: center;
+        padding: 48px 0;
+        border-top: 1px solid #837d8753;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footerBottom::after {
+        display: none;
+    }
+
+    .optionsFooter {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        font-family: "Karla", sans-serif;
+    }
+
+    .ourCompany, .helpMe, .contact, .others {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .ourCompany p,
+    .helpMe p,
+    .contact p,
+    .others p {
+        text-transform: uppercase;
+        color: var(--gray);
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .ourCompany ul,
+    .helpMe ul,
+    .contact ul,
+    .others ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .ourCompany ul li,
+    .helpMe ul li,
+    .contact ul li,
+    .others ul li {
+        text-transform: uppercase;
+        color: var(--violet);
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .ourCompany ul li:hover,
+    .helpMe ul li:hover,
+    .contact ul li:hover,
+    .others ul li:hover {
+        cursor: pointer;
+        transition: .2s;
+        text-decoration: underline;
+    }
+}
+

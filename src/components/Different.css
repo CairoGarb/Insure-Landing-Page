@@ -1,0 +1,256 @@
+.differentContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 200px 120px;
+    gap: 64px;
+    width: 100%;
+    position: relative;
+}
+
+.differentContainer h2 {
+    font-size: 48px;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    color: var(--violet);
+    padding-top: 24px;
+}
+
+.differentContainer::after {
+    content: '';
+    position: absolute;
+    width: 7%;
+    height: 1px;
+    left: 120px;
+    background-color: #2d26405e;
+}
+
+.differentContainer h2 span::after {
+    content: '\275C';
+}
+
+.flex-desktop {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+.process,
+.prices,
+.people {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.process h3,
+.prices h3,
+.people h3 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--violet);
+}
+
+.process p,
+.prices p,
+.people p {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--gray);
+}
+
+.processImg,
+.pricesImg,
+.peopleImg {
+    width: 15%;
+}
+
+.findOutContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--violet);
+    padding: 64px;
+    position: relative;
+}
+
+.findOutContainer::after {
+    content: '';
+    position: absolute;
+    background-image: url(/bg-pattern-how-we-work-desktop.svg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    top: 0;
+    right: 0;
+}
+
+.findOutContainer p {
+    font-size: 48px;
+    width: 40%;
+    color: var(--almost-white);
+    font-family: "DM Serif Display", serif;
+    z-index: 1;
+}
+
+.findOutContainer a {
+    border: 2px solid var(--almost-white);
+    color: var(--almost-white);
+    text-align: center;
+    width: 15%;
+    padding: 8px;
+    font-family: "Karla", sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    z-index: 1;
+}
+
+.findOutContainer a:hover {
+    cursor: pointer;
+    transition: .4s;
+    background-color: var(--almost-white);
+    color: var(--violet);
+    font-weight: 700;
+}
+
+@media screen and (max-width: 900px) {
+    .differentContainer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 96px 0;
+        gap: 64px;
+        width: 100%;
+        position: relative;
+    }
+
+    .differentContainer::after {
+        content: '';
+        position: absolute;
+        width: 30%;
+        height: 1px;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: #2d26405e;
+    }
+
+    .differentContainer h2 {
+        font-size: 48px;
+        font-family: "DM Serif Display", serif;
+        font-weight: 400;
+        color: var(--violet);
+        padding-top: 24px;
+    }
+
+    .differentContainer h2 span::after {
+        content: '\275C';
+    }
+
+    .processImg,
+    .pricesImg,
+    .peopleImg {
+        width: 15%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .process,
+    .prices,
+    .people {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .process h3,
+    .prices h3,
+    .people h3 {
+        font-family: "DM Serif Display", serif;
+        font-weight: 400;
+        font-size: 20px;
+        color: var(--violet);
+    }
+
+    .process p,
+    .prices p,
+    .people p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--gray);
+    }
+
+    .flex-desktop {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .findOutContainer {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--violet);
+        padding: 96px 0;
+        margin-left: 24px;
+        margin-right: 24px;
+        text-align: center;
+        gap: 32px;
+        position: relative;
+    }
+
+    .findOutContainer::after {
+        content: '';
+        position: absolute;
+        background-image: url(/bg-pattern-how-we-work-mobile.svg);
+        width: 100%;
+        height: 95%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top right;
+        top: 0;
+    }
+
+    .findOutContainer p {
+        font-size: 48px;
+        width: 90%;
+        color: var(--almost-white);
+        font-family: "DM Serif Display", serif;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1;
+    }
+
+    .findOutContainer a {
+        border: 2px solid var(--almost-white);
+        color: var(--almost-white);
+        text-align: center;
+        width: 40%;
+        padding: 8px;
+        font-family: "Karla", sans-serif;
+        text-transform: uppercase;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1;
+    }
+
+    .findOutContainer a:hover {
+        cursor: pointer;
+        transition: .4s;
+        background-color: var(--almost-white);
+        color: var(--violet);
+        font-weight: 700;
+    }
+
+}
+
+@media screen and (max-width: 376px) {
+    .findOutContainer a {
+        width: 50%;
+    }
+}
